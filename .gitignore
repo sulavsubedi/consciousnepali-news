@@ -1,0 +1,38 @@
+# Environment variables
+.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ghost content (managed via Docker volumes)
+content/
+
+# Theme build artifacts
+headline-theme/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+
+# SSL certs
+certs/
+*.pem
+*.key
+*.crt
