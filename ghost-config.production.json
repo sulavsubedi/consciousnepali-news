@@ -1,0 +1,46 @@
+{
+  "url": "https://consciousnepali.com",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "db",
+      "port": 3306,
+      "user": "ghost",
+      "password": "YOUR_DB_PASSWORD",
+      "database": "ghost"
+    }
+  },
+  "mail": {
+    "transport": "SMTP",
+    "from": "Conscious Nepali <noreply@consciousnepali.com>",
+    "options": {
+      "host": "smtp.mailgun.org",
+      "port": 587,
+      "auth": {
+        "user": "YOUR_MAIL_USER",
+        "pass": "YOUR_MAIL_PASS"
+      }
+    }
+  },
+  "logging": {
+    "transports": ["file", "stdout"]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  },
+  "privacy": {
+    "useUpdateCheck": true,
+    "useGravatar": false,
+    "useRpcPing": true,
+    "useStructuredData": true
+  },
+  "imageOptimization": {
+    "resize": true,
+    "srcsets": true
+  }
+}
