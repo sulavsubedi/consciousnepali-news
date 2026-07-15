@@ -1,0 +1,45 @@
+routes:
+  /:
+    controller: channel
+    filter: tag:-[hash-news,hash-internal]
+    order: published_at DESC
+
+collections:
+  /news/:
+    permalink: /news/{slug}/
+    filter: tag:news
+    order: published_at DESC
+
+  /politics/:
+    permalink: /politics/{slug}/
+    filter: tag:politics
+    order: published_at DESC
+
+  /society/:
+    permalink: /society/{slug}/
+    filter: tag:society
+    order: published_at DESC
+
+  /opinion/:
+    permalink: /opinion/{slug}/
+    filter: tag:opinion
+    order: published_at DESC
+
+  /explainers/:
+    permalink: /explainers/{slug}/
+    filter: tag:explainers
+    order: published_at DESC
+
+  /diaspora/:
+    permalink: /diaspora/{slug}/
+    filter: tag:diaspora
+    order: published_at DESC
+
+  /economy/:
+    permalink: /economy/{slug}/
+    filter: tag:economy
+    order: published_at DESC
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
